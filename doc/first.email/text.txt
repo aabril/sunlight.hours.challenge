@@ -1,0 +1,64 @@
+Thanks for sending over the test. 
+I will be completing it between today and tomorrow.
+
+It seems to me that the specifications are not enough well documented, 
+so to avoid confusion, I am going to make assumptions and questions.
+
+Please do correct me if these assumptions are incorrect. 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# init method 
+
+JSON format - concepts
+
+According to the specifications (PDF),
+the init method is taking a JSON Array formatted as a String.
+
+Each element of this array represents a street in an object that contains: 
+
+- neighborhood : The neighborhood where the street belongs to. ( to group by )
+- apartments_height : ???  ( will make some questions below )
+- buildings : A list of buildings that belongs to this street 
+    [ 
+        - name: name of the building  ( just descriptive )
+        - apartments_count: number of apartments, assuming 1 apartment per 1 floor
+        - distance: distance of?  ( will make some questions below ) 
+    ]  
+
+
+So based on the example diagram:
+![](figure0.png)
+
+We will have an "init" JSON array as it follows:
+```
+[
+   {
+      "neighborhood": "POBLENOU", 
+      "apartments_height": 7,
+      "buildings": [
+         { "name": "Aticco", apartments_count: 8, distance: null },
+         { "name": "01", apartments_count: 4, distance: null },
+         { "name": "CEM", apartments_count: 4, distance: null },
+         { "name": "30", apartments_count: 4, distance: null },
+      ]
+   }
+]
+```
+Questions:
+
+1. Is the JSON above well assumed,
+2. What is aparments_height on the root of the element?
+3. What is distance on each item of the buildings?
+4. Is the neighborhood  name supposed to be unique? (to handle errors if more than one is provided).
+5. Should I assume the sun is doing a radial from the ground? 
+
+> as per example, if the sunrise is at 08:14 and the sunset at 17:25, noon will be at 12:50,
+so at sunrise the sun will be totally at the ground east, noon on the top, and sunset on the ground west. ( just talking out loud to help to define and determine since the specs are not very clear ).
+
+
+That's all the questions for now.
+Looking forward to hearing more from you. 
+
+Kind Regards, 
+Albert.
