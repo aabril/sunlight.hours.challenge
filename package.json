@@ -1,0 +1,8 @@
+{
+  "name": "badi.challenge",
+  "version": "1.0.0",
+  "description": "Badi's sunlight hours",
+  "main": "index.js",
+  "author": "Albert Abril",
+  "license": "MIT"
+}
