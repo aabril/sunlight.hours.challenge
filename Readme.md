@@ -1,4 +1,4 @@
-# Badi’s sunlight hours
+# Sunlight hours
 
 A new feature has been requested for our room listings in future Barcelona: 
 we want to display the sunlight hours that a given apartment receives in a day.
